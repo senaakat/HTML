@@ -16,20 +16,98 @@
     }
     /*Sayfa boyutu*/
     #page{
-        min-width: 900px;
+        width: 900px;
         min-height:600px; 
         border-style: solid;
         border-width: 1px;
         margin: auto;
+    }
+    /*Banner*/
+    #banner{
+        width: 900px;
+        min-height:100px; 
+        border-style: dotted;
+        border-width: 1px;
+        background-color:rgba(165, 42, 42, 0.352);
+        margin: auto;
+    }
+    #image{
+        width: 100px;
+        height:100px;
+        border-style:none;
+        border-width: 1px;
+        position: relative;
+        top: 2px;
+        left:10px;
+    }
+    /*Anamenü*/
+    #mainmenu{
+        width: 892px;
+        height:50px;
+        border-width: 5px;
+        border-style:double;
+        position: relative;
+        margin: auto;
+    }
+
+    #mainmenu ul{
+        list-style-type: none;
+    }
+
+    #mainmenu ul li{
+        width: 100px;
+        border-style:solid;
+        border-width: 3px;
+        border-radius: 5px;
+        border-color: rgb(12, 12, 12);
+        background-color: antiquewhite;
+        float: left;
+        padding: 10px;
+        margin-left: 80px;
+        margin-top: 2px;
+        position: relative;
+        text-align: center;
+    }
+
+    #mainmenu ul a{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration:underline;
+        font-weight:bold;
+        font-style: italic;
+        color: black;
+        text-transform:capitalize;
+    }
+
+    #mainmenu ul a:visited{
+        color: blue;
+    }
+
+    #mainmenu ul a:hover{
+        color:gray;
+        text-decoration: overline;
+    }
+
+    #mainmenu ul a:active{
+        color: brown;
     }
 </style>
     </head>
     <body>
         <div id="page">
             <header id="banner">
-
+                <div id="logo">
+                    <img id="image"  src="c:\Users\Senaa\Downloads\LOGO.png" 
+                    alt="Sena" title="Sena">
+                </div>
             </header>
-            <nav id="mainmenu"></nav>
+            <nav id="mainmenu">
+                <ul>
+                    <li><a href="website.html">Anasayfa</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
             <article id="content"></article>
             <aside id="sidemenu"></aside>
             <footer id="lowermenu"></footer>
