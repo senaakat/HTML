@@ -31,7 +31,8 @@
         background-color:rgba(165, 42, 42, 0.352);
         margin: auto;
     }
-    #image{
+    
+    .image{
         width: 100px;
         height:100px;
         border-style:none;
@@ -40,6 +41,8 @@
         top: 2px;
         left:10px;
     }
+
+
     /*Anamenü*/
     #mainmenu{
         width: 892px;
@@ -90,13 +93,92 @@
     #mainmenu ul a:active{
         color: brown;
     }
+    #content{
+        background-image: url("C:\Users\Senaa\Downloads\arkaplan.jpeg");
+        width: 450px;
+        height: 400px;
+        float: left;
+        border-width: 2px;
+        border-style:solid;
+        position: relative;
+        margin: auto;
+    }
+    .backgroundimage{
+        width: 450px;
+        height: 400px;
+        position: absolute;
+        margin: auto;
+        z-index: 1;
+    }
+    .me{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        float: left;
+        left: 75px;
+        top: 50px;
+        z-index: 2;
+    }
+    #sidemenu{
+        background-image: url("C:\Users\Senaa\Downloads\arkaplan.jpeg");
+        width: 435px;
+        height: 394px;
+        background-color: rgb(246, 196, 212);
+        border-width: 6px;
+        border-style:dashed;
+        border-color:rgb(166, 166, 234);
+        position: relative;
+        float: right;
+        margin: auto;
+    }
+    aside p{
+        width: 200px;
+        margin-bottom: auto;
+        position: relative;
+        float:left;
+        left: 20px;
+        top: 10px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration:none;
+        font-weight:bold;
+        font-style: italic;
+        color: black(14, 70, 153);
+        text-transform:capitalize;
+
+    }
+
+    aside ul li{
+        margin-bottom: auto;
+        position: relative;
+        float:left;
+        left: 20px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration:underline;
+        font-weight:lighter;
+        font-style: italic;
+        color: black;
+        padding: 5px;
+        margin-top: 3px;
+        text-transform:capitalize;       
+    }
+    aside a{
+        position: relative;
+        float: right;
+        right: 90px;
+        padding: 5px;
+        top: 48%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style:oblique;
+        word-spacing: normal;
+        color: brown;
+    }
 </style>
     </head>
     <body>
         <div id="page">
             <header id="banner">
                 <div id="logo">
-                    <img id="image"  src="c:\Users\Senaa\Downloads\LOGO.png" 
+                    <img class="image"  src="c:\Users\Senaa\Downloads\LOGO.png" 
                     alt="Sena" title="Sena">
                 </div>
             </header>
@@ -108,8 +190,24 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <article id="content"></article>
-            <aside id="sidemenu"></aside>
+            <article id="content">
+                <img class="backgroundimage" src="C:\Users\Senaa\Downloads\arkaplan.jpeg"
+                alt="background-image" title="background-image"
+                >
+                <img class="me" src="C:\Users\Senaa\Downloads\me2.jpeg" alt="me" title="me">
+            </article>
+            <aside id="sidemenu">
+                <p>Hi there, I'm Sena.🙇‍♀️</p>
+                <br>
+                <br>
+                <ul>
+                    <li ><em>📚 I'm a Student</li>
+                    <li >💥 I'm currently learning JAVA,HTML,C and CSS,DevOps.</u></li>
+                    <li >🍃 Computer Engineer</em></li>
+                    </ul>
+                    <a href="#"> Gizlilik Politikası</a>
+                    <a href="#">Çerez Politikası</a>
+            </aside>
             <footer id="lowermenu"></footer>
         </div>
     </body>
