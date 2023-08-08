@@ -16,15 +16,15 @@
     }
     /*Sayfa boyutu*/
     #page{
-        width: 900px;
-        min-height:600px; 
+        width: 1500px;
+        min-height:750px; 
         border-style: solid;
         border-width: 1px;
         margin: auto;
     }
     /*Banner*/
     #banner{
-        width: 900px;
+        width: 1500;
         min-height:100px; 
         border-style: dotted;
         border-width: 1px;
@@ -37,7 +37,7 @@
         height:100px;
         border-style:none;
         border-width: 1px;
-        position: relative;
+        position: absolute;
         top: 2px;
         left:10px;
     }
@@ -45,7 +45,7 @@
 
     /*Anamenü*/
     #mainmenu{
-        width: 892px;
+        width: 1500px;
         height:50px;
         border-width: 5px;
         border-style:double;
@@ -65,6 +65,7 @@
         border-color: rgb(12, 12, 12);
         background-color: antiquewhite;
         float: left;
+        left: 250px;
         padding: 10px;
         margin-left: 80px;
         margin-top: 2px;
@@ -95,8 +96,8 @@
     }
     #content{
         background-image: url("C:\Users\Senaa\Downloads\arkaplan.jpeg");
-        width: 450px;
-        height: 400px;
+        width: 750px;
+        height: 520px;
         float: left;
         border-width: 2px;
         border-style:solid;
@@ -104,25 +105,25 @@
         margin: auto;
     }
     .backgroundimage{
-        width: 450px;
-        height: 400px;
+        width: 750px;
+        height: 520px;
         position: absolute;
         margin: auto;
         z-index: 1;
     }
     .me{
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 350px;
         position: absolute;
         float: left;
-        left: 75px;
-        top: 50px;
+        left: 125px;
+        top: 80px;
         z-index: 2;
     }
     #sidemenu{
         background-image: url("C:\Users\Senaa\Downloads\arkaplan.jpeg");
-        width: 435px;
-        height: 394px;
+        width: 730px;
+        height: 516px;
         background-color: rgb(246, 196, 212);
         border-width: 6px;
         border-style:dashed;
@@ -172,12 +173,62 @@
         word-spacing: normal;
         color: brown;
     }
+
+    /*alt menu için css*/
+    #lowermenu{
+        width: 1500px;
+        height: 60px;
+        background-color: antiquewhite;
+        border-width: 3px;
+        border-style:groove;
+        border-color:black;
+        position: relative;
+        float: right;
+        margin: auto;
+    }
+
+    #lowermenu a{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: small;
+        font-weight: bolder;
+        font-style: oblique;
+        position: relative;
+        float: left;
+        left: 630px;
+        text-align: justify;
+    }
+
+    #lowermenu a:link{
+        color:blue;
+    }
+
+    #lowermenu a:hover{
+        color: gray;
+    }
+
+    #lowermenu p{
+        font-style: italic;
+        text-align: center;
+        
+    }
+    header div p{
+        font-size: 50px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-overflow: clip;
+        font-style: italic;
+        vertical-align:middle;
+
+    }
 </style>
     </head>
     <body>
         <div id="page">
             <header id="banner">
                 <div id="logo">
+                    <p>SENA AKAT</p>
                     <img class="image"  src="c:\Users\Senaa\Downloads\LOGO.png" 
                     alt="Sena" title="Sena">
                 </div>
@@ -208,7 +259,16 @@
                     <a href="#"> Gizlilik Politikası</a>
                     <a href="#">Çerez Politikası</a>
             </aside>
-            <footer id="lowermenu"></footer>
+            <footer id="lowermenu">
+                <p>Copyright © 2023 Code</p>
+                <a href="website.html">Help Center</a>
+                <a href="books.html">Students</a>
+                <a href="about.html">Privacy Policy</a>
+                <a href="contact.html">Contact</a>
+                <br>
+                <p>Tüm hakları saklıdır</p>
+                
+            </footer>
         </div>
     </body>
 </html>
